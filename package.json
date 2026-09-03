@@ -1,0 +1,31 @@
+{
+  "name": "pje-trf5-scraper",
+  "version": "1.0.0",
+  "description": "Scraper HTTP (sin automatizacion de navegador) para la Consulta Publica del PJe del TRF5",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "ts-node src/index.ts",
+    "scrape": "ts-node src/index.ts",
+    "scrape:demo": "ts-node src/index.ts --nome-parte \"MARIA SILVA\" --max-processos 3 --max-pdfs 5",
+    "retry:failed": "ts-node src/index.ts --retry-failed",
+    "test:429": "ts-node test/rate-limit.test.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "axios-cookiejar-support": "^5.0.3",
+    "cheerio": "^1.0.0",
+    "iconv-lite": "^0.6.3",
+    "tough-cookie": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

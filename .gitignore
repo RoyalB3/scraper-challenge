@@ -1,0 +1,20 @@
+# dependencias
+node_modules/
+
+# build
+dist/
+*.tsbuildinfo
+
+# salida del scraper
+output/
+*.log
+
+# entorno
+.env
+.env.*
+
+# sistema operativo / editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
