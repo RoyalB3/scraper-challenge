@@ -19,7 +19,7 @@ errores **429 Too Many Requests**.
 ## Instalación
 
 ```bash
-git clone "acá cambio mi repo"
+git clone https://github.com/RoyalB3/scraper-challenge
 cd scraper-challenge
 npm install
 ```
